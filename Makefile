@@ -29,7 +29,7 @@ BUILD_LIST := $(patsubst include/%, $(BUILD_DIR)/%, $(INC_DIR))
 
 CMD_INC := -I $(INC_LIST)
 #CMD_FRAMEWORKS := -framework Foundation
-CMD_LIB := -lstdc++
+CMD_LIB := -lstdc++ -lboost_filesystem -lboost_system
 
 CFLAGS := -c -std=c++1z -Wall -Werror -g
 
